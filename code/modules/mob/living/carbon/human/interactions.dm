@@ -344,7 +344,9 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			var/damage_type = BRUTE
 			var/damtype = damage_type
 			var/def_zone = "groin"
-			apply_damage(damage_type, damage, def_zone)
+			apply_damage(3, BRUTE, BP_GROIN)
+			//apply_damage(damage_type, damage, def_zone)
+			//H.adjustToxLoss(-6)
 			message = pick("fucks [P]'s ass.")
 			if (prob(35))
 				message = pick("fucks [P]'s ass.")
