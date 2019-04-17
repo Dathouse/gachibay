@@ -78,33 +78,33 @@
 	var/dat = "<B><HR><FONT size=3>INTERACTIONS - [H.partner]</FONT></B><BR><HR>"
 	//var/ya = "&#1103;"
 
-	//dat +=  {"• <A href='?src=\ref[usr];interaction=bow'>Bow.</A><BR>"}
+	//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=bow'>Bow.</A><BR>"}
 	//if (Adjacent(P))
-	//	dat +=  {"• <A href='?src=\ref[src];interaction=handshake'>Ïîïðèâåòñòâîâàòü.</A><BR>"}
+	//	dat +=  {"â€¢ <A href='?src=\ref[src];interaction=handshake'>ÃÃ®Ã¯Ã°Ã¨Ã¢Ã¥Ã²Ã±Ã²Ã¢Ã®Ã¢Ã Ã²Ã¼.</A><BR>"}
 	//else
-	//	dat +=  {"• <A href='?src=\ref[src];interaction=wave'>Ïîïðèâåòñòâîâàòü.</A><BR>"}
+	//	dat +=  {"â€¢ <A href='?src=\ref[src];interaction=wave'>ÃÃ®Ã¯Ã°Ã¨Ã¢Ã¥Ã²Ã±Ã²Ã¢Ã®Ã¢Ã Ã²Ã¼.</A><BR>"}
 	if (hashands)
 		dat +=  {"<font size=3><B>Hands:</B></font><BR>"}
 		if (Adjacent(P))
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=handshake'>Give handshake.</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=hug'>Hug!</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=cheer'>Cheer!</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=five'>Highfive.</A><BR>"}
+			//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=handshake'>Give handshake.</A><BR>"}
+			//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=hug'>Hug!</A><BR>"}
+			//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=cheer'>Cheer!</A><BR>"}
+			//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=five'>Highfive.</A><BR>"}
 			//if (hashands_p)
-			//	dat +=  {"• <A href='?src=\ref[src];interaction=give'>Give.</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=slap'><font color=red>Slap!</font></A><BR>"}
+			//	dat +=  {"â€¢ <A href='?src=\ref[src];interaction=give'>Give.</A><BR>"}
+			//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=slap'><font color=red>Slap!</font></A><BR>"}
 			if (isnude_p)
 				//if (hasanus_p)
-				//	dat += {"• <A href='?src=\ref[usr];interaction=assslap'>Slap some ass!</A><BR>"}
+				//	dat += {"â€¢ <A href='?src=\ref[usr];interaction=assslap'>Slap some ass!</A><BR>"}
 				if (hasvagina_p && (!P.mutilated_genitals))
 					dat += {"<A href='?src=\ref[usr];interaction=fingering'>Put fingers in places...</A><BR>"}
 			//if (P.species.name == "Tajaran")
-			//	dat +=  {"• <A href='?src=\ref[usr];interaction=pull'><font color=red>Pull big fluffy tail!</font></A><BR>"}
+			//	dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=pull'><font color=red>Pull big fluffy tail!</font></A><BR>"}
 			//	if(P.can_inject(H, 1))
-			//		dat +=  {"• <A href='?src=\ref[usr];interaction=pet'>Pet.</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=knock'><font color=red>Knock upside the head.</font></A><BR>"}
-		//dat +=  {"• <A href='?src=\ref[usr];interaction=fuckyou'><font color=red>Insult.</font></A><BR>"}
-		//dat +=  {"• <A href='?src=\ref[usr];interaction=threaten'><font color=red>Threaten.</font></A><BR>"}
+			//		dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=pet'>Pet.</A><BR>"}
+			//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=knock'><font color=red>Knock upside the head.</font></A><BR>"}
+		//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=fuckyou'><font color=red>Insult.</font></A><BR>"}
+		//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=threaten'><font color=red>Threaten.</font></A><BR>"}
 
 	if (mouthfree && (lying == P.lying || !lying))
 		dat += {"<font size=3><B>Mouth:</B></font><BR>"}
@@ -112,16 +112,16 @@
 		if (Adjacent(P))
 			//if (mouthfree_p)
 			//	if (H.species.name == "Tajaran")
-			//		dat += {"• <A href='?src=\ref[usr];interaction=lick'>Ëèçíóòü â ùåêó.</A><BR>"}
+			//		dat += {"â€¢ <A href='?src=\ref[usr];interaction=lick'>Ã‹Ã¨Ã§Ã­Ã³Ã²Ã¼ Ã¢ Ã¹Ã¥ÃªÃ³.</A><BR>"}
 			if (isnude_p && (!P.mutilated_genitals))
 				if (haspenis_p)
 					dat += {"<A href='?src=\ref[usr];interaction=blowjob'><font color=purple>Suck dick.</font></A><BR>"}
 				if (hasvagina_p)
 					dat += {"<A href='?src=\ref[usr];interaction=vaglick'><font color=purple>Lick pussy.</font></A><BR>"}
 				//if (hasanus_p)
-				//	dat += {"• <A href='?src=\ref[usr];interaction=asslick'><font color=purple>Lick ass.</font></A><BR>"}
-		//	dat +=  {"• <A href='?src=\ref[usr];interaction=spit'><font color=red>Spit.</font></A><BR>"}
-		//dat +=  {"• <A href='?src=\ref[usr];interaction=tongue'><font color=red>Stick out tongue.</font></A><BR>"}
+				//	dat += {"â€¢ <A href='?src=\ref[usr];interaction=asslick'><font color=purple>Lick ass.</font></A><BR>"}
+		//	dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=spit'><font color=red>Spit.</font></A><BR>"}
+		//dat +=  {"â€¢ <A href='?src=\ref[usr];interaction=tongue'><font color=red>Stick out tongue.</font></A><BR>"}
 
 	if (isnude && usr.loc == H.partner.loc)
 		if (haspenis && hashands)
@@ -137,6 +137,11 @@
 		if (hasvagina && haspenis_p && (!H.mutilated_genitals))
 			dat += {"<font size=3><B>Vagina:</B></font><BR>"}
 			dat += {"<A href='?src=\ref[usr];interaction=mount'><font color=purple>Mount!</font></A><BR><HR>"}
+
+	if (isnude && usr.loc == H.partner.loc && hashands)
+		if (hasvagina && haspenis_p && (!H.mutilated_genitals))
+			dat += {"<font size=3><B>Vagina:</B></font><BR>"}
+			dat += {"<A href='?src=\ref[usr];interaction=Tease'><font color=purple>Tease</font></A><BR><HR>"}
 
 	var/datum/browser/popup = new(usr, "interactions", "Interactions", 340, 480)
 	popup.set_content(dat)
@@ -442,6 +447,41 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			if (H.species.name == "Slime People")
 				playsound(loc, "honk/sound/interactions/champ[rand(1, 2)].ogg", 50, 1, -1)
 
+		if("Tease")
+			message = pick("Teases [P]'s dick", "Grinds [P]'s cock", "Rubs their clit on [P]'s cock")
+			if (H.lastfucked != P || H.lfhole != hole)
+				message = pick("begins to grind [P]'s dick")
+				H.lastfucked = P
+				H.lfhole = hole
+
+			if (prob(5) && P.stat != DEAD)
+				H.visible_message("<font color=purple><B>[H] [message].</B></font>")
+				P.lust += H.potenzia * 2
+			else
+				H.visible_message("<font color=purple>[H] [message].</font>")
+			if (istype(P.loc, /obj/structure/closet))
+				P.visible_message("<font color=purple>[H] [message].</font>")
+
+				playsound(P.loc.loc, 'sound/effects/clang.ogg', 50, 0, 0)
+			H.lust += P.potenzia
+			if (P.potenzia > 20)
+				H.staminaloss += P.potenzia * 0.25
+			if (H.lust >= H.resistenza)
+				H.cum(H, P)
+			else
+				H.moan()
+			if (P.stat != DEAD && P.stat != UNCONSCIOUS)
+				P.lust += H.potenzia
+				if (P.lust >= P.resistenza)
+					P.cum(P, H, "vagina")
+				else
+					P.moan()
+			H.do_fucking_animation(P)
+			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
+			if (H.species.name == "Slime People")
+				playsound(loc, "honk/sound/interactions/champ[rand(1, 2)].ogg", 50, 1, -1)
+
+
 /mob/living/carbon/human/proc/moan()
 
 	var/mob/living/carbon/human/H = src
@@ -552,9 +592,9 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 	if(istype(M, /mob/living/carbon/human) && user.zone_sel.selecting == "groin" && M.is_nude())
 		if (hole == "vagina" && hasvagina)
 			if (user == M)
-				message = pick("fucks their own pussy")//, "çàòàëêèâàåò â ñåá[ya] [rus_name]", "ïîãðóæàåò [rus_name] â ñâîå ëîíî")
+				message = pick("fucks their own pussy")//, "Ã§Ã Ã²Ã Ã«ÃªÃ¨Ã¢Ã Ã¥Ã² Ã¢ Ã±Ã¥Ã¡[ya] [rus_name]", "Ã¯Ã®Ã£Ã°Ã³Ã¦Ã Ã¥Ã² [rus_name] Ã¢ Ã±Ã¢Ã®Ã¥ Ã«Ã®Ã­Ã®")
 			else
-				message = pick("fucks [M] right in the pussy with the dildo", "jams it right into [M]")//, "çàòàëêèâàåò â [M] [rus_name]", "ïîãðóæàåò [rus_name] â ëîíî [M]")
+				message = pick("fucks [M] right in the pussy with the dildo", "jams it right into [M]")//, "Ã§Ã Ã²Ã Ã«ÃªÃ¨Ã¢Ã Ã¥Ã² Ã¢ [M] [rus_name]", "Ã¯Ã®Ã£Ã°Ã³Ã¦Ã Ã¥Ã² [rus_name] Ã¢ Ã«Ã®Ã­Ã® [M]")
 
 			if (prob(5) && M.stat != DEAD && M.stat != UNCONSCIOUS)
 				user.visible_message("<font color=purple><B>[user] [message].</B></font>")
